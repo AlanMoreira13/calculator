@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div class="main">
+        <header class="cabecalho">
+            <h1>Calculadora</h1>
+        </header>
+        <form action="" name="calculator">
+            <input type="text" class="text mainColor" name="text1" disabled>
+            <input type="text" class="text1 mainColor" name="text12" value="C" onclick="location.reload()"><br>
+
+            <input type="button" class="num mainColor" name="btn9" value="9" onclick="displayNum(btn9.value)">
+            <input type="button" class="num mainColor" name="btn8" value="8" onclick="displayNum(btn8.value)">
+            <input type="button" class="num mainColor" name="btn7" value="7" onclick="displayNum(btn7.value)">
+            <input type="button" class="num blue" name="addbtn" value="+" onclick="displayNum(addbtn.value)"><br>
+
+            <input type="button" class="num mainColor" name="btn6" value="6" onclick="displayNum(btn6.value)">
+            <input type="button" class="num mainColor" name="btn5" value="5" onclick="displayNum(btn5.value)">
+            <input type="button" class="num mainColor" name="btn4" value="4" onclick="displayNum(btn4.value)">
+            <input type="button" class="num pin" name="subbtn" value="-" onclick="displayNum(subbtn.value)"><br>
+
+
+            <input type="button" class="num mainColor" name="btn3" value="3" onclick="displayNum(btn3.value)">
+            <input type="button" class="num mainColor" name="btn2" value="2" onclick="displayNum(btn2.value)">
+            <input type="button" class="num mainColor" name="btn1" value="1" onclick="displayNum(btn1.value)">
+            <input type="button" class="num gre" name="mulbtn" value="*" onclick="displayNum(mulbtn.value)"><br>
+
+            <input type="button" class="num mainColor" name="dot" value="." onclick="displayNum(dot.value)">
+            <input type="button" class="num mainColor" name="btn0" value="0" onclick="displayNum(btn0.value)">
+            <input type="button" class="num pur" name="eqlbtn" value="=" onclick="text1.value=eval(text1.value)">
+            <input type="button" class="num ora" name="divbtn" value="/" onclick="displayNum(divbtn.value)"><br>
+        </form>
+        <footer class="rodape">
+            <h1>By Alan</h1>
+        </footer>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
